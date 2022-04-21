@@ -5,7 +5,9 @@ import styled from 'styled-components'
 export const AboutPage = () => {
   return (
     <AboutContainer>
-        <AboutWrapper></AboutWrapper>
+        <AboutWrapper>
+          Have added something
+        </AboutWrapper>
     </AboutContainer>
   )
 }
