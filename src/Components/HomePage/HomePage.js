@@ -5,7 +5,9 @@ import styled from 'styled-components'
 export const HomePage = () => {
   return (
     <HomeContainer>
-        <HomeWrapper></HomeWrapper>
+        <HomeWrapper>
+          CONFIRMING FOR GIT MASTER CLASS
+        </HomeWrapper>
     </HomeContainer>
   )
 }
