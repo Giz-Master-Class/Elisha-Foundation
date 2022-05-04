@@ -268,7 +268,7 @@ const LeftCard = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 0 0 30px;
+    margin: 0 0 0 -5px;
   }
   /* @media screen and (max-width: 375px){
     margin-left: -22px;
@@ -289,6 +289,9 @@ const RightCard = styled.div`
   }
   @media screen and (max-width: 768px){
     margin-left: 150px;
+  }
+  @media screen and (max-width: 600px){
+    margin-left: -10px;
   }
   @media screen and (max-width: 425px){
     margin-left: -20px;
