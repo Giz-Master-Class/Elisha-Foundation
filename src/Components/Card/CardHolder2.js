@@ -270,6 +270,11 @@ const LeftCard = styled.div`
     align-items: center;
     margin: 0 0 0 -5px;
   }
+  @media screen and (max-width: 425px){
+    margin-left: 30px;
+  }
+
+  
   /* @media screen and (max-width: 375px){
     margin-left: -22px;
   } */

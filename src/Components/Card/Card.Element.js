@@ -28,6 +28,9 @@ export const TopHead = styled.div`
       
      
     }
+    @media screen and (max-width: 600px){
+    margin-left: 80px;
+  }
   
     @media screen and (max-width: 425px){
     margin-top: 15px;
