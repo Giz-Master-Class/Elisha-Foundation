@@ -21,9 +21,6 @@ export const Header = () => {
                 <Link to ='/blog' style ={linkStyle}> <NavLinks>Blog</NavLinks> </Link>
                 <Link to ='/donate' style ={linkStyle}> <Button>Donate</Button> </Link>
             </Navs>
-            {/* <Button>
-                Try for free
-            </Button> */}
             <MobileIcon onClick={handleClick}>
                 {click ? <FaTimes/> : <FaBars/>}
             </MobileIcon>
@@ -40,7 +37,6 @@ const Container = styled.div`
    display: flex;
    justify-content: center;
 `
-
 
 const ContainerWrapper = styled.div`
   width: 90%;
@@ -84,16 +80,18 @@ const Navs = styled.ul`
   background-color: white;
   opacity: 0.8;
   height:100%;
-  width: 50%;
+  width: 85%;
   top:63px;
-  left: ${({click}) => (click ? 0 : '-100%' )};
+  top: ${({click}) => (click ? 150: '-100%' )};
   transition: all 0.8s ease-in-out;
+  z-index:5;
 }
 `
 
 const NavLinks = styled.li`
-   list-style: none;
-   text-decoration:none;
+  list-style: none;
+  text-decoration:none;
+
 `
 
 const Button = styled.div`
@@ -113,4 +111,5 @@ const Button = styled.div`
 const linkStyle = {
   textDecoration :"none",
   color:'black'
+  
 };
