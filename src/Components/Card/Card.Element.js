@@ -253,11 +253,11 @@ export const Para = styled.p`
       /* margin-bottom: 15px; */
       width: ${({wid6}) =>wid6};
       height: ${({hg5}) =>hg5};
-      background: pink;
+      /* background: pink; */
     }
     @media screen and (max-width: 525px){
       width: ${({wid4}) =>wid4};
-      background: purple;
+      /* background: purple; */
     }
     @media screen and (max-width: 425px){
       width: ${({wid5}) =>wid5};
