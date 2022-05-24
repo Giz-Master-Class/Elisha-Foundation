@@ -28,9 +28,17 @@ export const TopHead = styled.div`
       
      
     }
-    @media screen and (max-width: 600px){
-    margin-left: 80px;
+    @media screen and (max-width: 706px){
+    margin-left: 40px;
   }
+  @media screen and (max-width: 600px){
+    margin-left: ${({mt2}) =>mt2};
+      
+    }
+  @media screen and (max-width: 525px){
+    margin-left: 100px;
+      
+    }
   
     @media screen and (max-width: 425px){
     margin-top: 15px;
@@ -116,6 +124,10 @@ export const LeftWrap = styled.div`
       width: ${({wd1}) =>wd1};
       height: ${({ht1}) =>ht1};
     }
+    @media screen and (max-width: 1024px){
+      width: ${({wd6}) =>wd6};
+      
+    }
     @media screen and (max-width: 900px){
       width: ${({widl}) =>widl};
       border-radius: ${({brs}) =>brs};
@@ -126,8 +138,20 @@ export const LeftWrap = styled.div`
       width: ${({wd2}) =>wd2};
       height: ${({ht2}) =>ht2};
     }
+    @media screen and (max-width: 768px){
+      margin-left: ${({mg1}) =>mg1};
+      
+    }
+    @media screen and (max-width: 706px){
+      margin-left: ${({mg2}) =>mg2};
+      width: ${({wd7}) =>wd7};
+      
+    }
     
-  
+    @media screen and (max-width: 525px){
+      width: ${({wd8}) =>wd8};
+      
+    }
     @media screen and (max-width: 425px){
       width: ${({wd3}) =>wd3};
       height: ${({ht3}) =>ht3};
@@ -211,20 +235,40 @@ export const Para = styled.p`
       height: ${({hg1}) =>hg1};
       font-size: ${({fz1}) =>fz1};
       line-height: ${({lh1}) =>lh1};
+      /* background: red; */
     }
     @media screen and (max-width: 900px){
       margin-left: ${({mrft}) =>mrft};
+      /* background: pink; */
+      height: ${({hg4}) =>hg4};
   }
     @media screen and (max-width: 850px){
       width: ${({wid2}) =>wid2};
       height: ${({hg2}) =>hg2};
       font-size: ${({fz2}) =>fz2};
       line-height: ${({lh2}) =>lh2};
+      /* background: yellow; */
+    }
+    @media screen and (max-width: 706px){
+      /* margin-bottom: 15px; */
+      width: ${({wid6}) =>wid6};
+      height: ${({hg5}) =>hg5};
+      background: pink;
+    }
+    @media screen and (max-width: 525px){
+      width: ${({wid4}) =>wid4};
+      background: purple;
+    }
+    @media screen and (max-width: 425px){
+      width: ${({wid5}) =>wid5};
+      height: ${({hg2}) =>hg2};
     }
     @media screen and (max-width: 375px){
       font-size: ${({fnz}) =>fnz};
        margin-left: ${({pml}) =>pml};
        width: ${({wdt}) =>wdt};
+       width: ${({wid2}) =>wid2};
+       
     
     }
     @media screen and (max-width: 320px){
@@ -243,13 +287,17 @@ export const ButtonContain = styled.div`
    justify-content: flex-end;
    margin-top: ${({mt}) =>mt};
    /* background: yellow; */
+   @media screen and (max-width: 1024px){
+      margin-top: ${({mtn}) =>mtn};
+  }
    @media screen and (max-width: 900px){
       margin-left: ${({bmt}) =>bmt};
+      margin-top: ${({mtn1}) =>mtn1};
   }
   @media screen and (max-width: 768px){
      
       margin-left: ${({mt1}) =>mt1};
-      
+      /* margin-top: ${({mtn1}) =>mtn1}; */
      
     }
    @media screen and (max-width: 375px){
@@ -276,8 +324,21 @@ export const Para2 = styled.p`
 `
 
 export const Button = styled.div`
-  width: 165px;
-  height: 48px;
+  width: ${({wt}) =>wt};
+  height: ${({he}) =>he};
+  background: #3AB54A;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px 0 0 0;
+  /* gap: 10px; */
+  border-radius: 8px;
+  
+
+  
+`
+export const Button2 = styled.div`
+  width:${({wtth}) =>wtth};
+  height:  ${({hhht}) =>hhht};
   background: #3AB54A;
   color: #ffffff;
   text-align: center;
@@ -293,6 +354,7 @@ export const Button = styled.div`
   
 `
 
+
 export const WrapLeft = styled.div`
   position: ${({ptn}) =>ptn};
   bottom: ${({btm}) =>btm};
@@ -304,3 +366,8 @@ export const WrapLeft = styled.div`
   border-radius: ${({br}) =>br};
 `
 
+export const linkStyle = {
+  textDecoration :"none",
+  
+  
+}
