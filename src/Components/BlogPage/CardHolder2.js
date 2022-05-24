@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Card from './Card'
+import Card from '../Card/Card'
 import Coin from '../Images/coin.png'
 
 export const CardHolder2 = () => {
@@ -22,12 +22,13 @@ export const CardHolder2 = () => {
                bdg=' rgba(0, 51, 153, 0.4)'
                col='white'
                br=' 0 0 8px 8px'
-               Btn='Donate'
+               Bttn='Donate'
                Head='Donating to Charity'
                Paragraph='We believe everyone should be able to live'
                Paragraph1='with dignity, without dependence. We are a'
                Paragraph2='Non-Governmental Organization,'
                mt='-5px'
+               mt2='90px'
                cl='white'
                mg=' 300px 0 0 -375px'
                zi='2'
@@ -39,6 +40,8 @@ export const CardHolder2 = () => {
                ftz='30px'
                mgr='-290px 0 0 0'
                fnz='14px'
+               wtth='165px'
+               hhht='48px'
                wth='120px'
                hht='40px'
                tgn='center'
@@ -88,7 +91,7 @@ export const CardHolder2 = () => {
                bdg=' rgba(0, 51, 153, 0.4)'
                col='white'
                br=' 0 0 8px 8px'
-               Btn='Donate'
+               Bttn='Donate'
                Head='Donating to Charity'
                Paragraph='We believe everyone should be able to live'
                Paragraph1='with dignity, without dependence. We are a'
@@ -105,6 +108,8 @@ export const CardHolder2 = () => {
                ftz='30px'
                mgr='-290px 0 0 0'
                fnz='14px'
+               wtth='165px'
+               hhht='48px'
                wth='120px'
                hht='40px'
                tgn='center'
@@ -136,6 +141,8 @@ export const CardHolder2 = () => {
                fnt='32px'
                mgh='50px'
                mnt1='10px'
+               mg1='-25px'
+               mg2='-1px'
               //  mft2='3px'
               //  mgt='0 20px 0 0'
             />
@@ -155,7 +162,7 @@ export const CardHolder2 = () => {
                bdg=' rgba(0, 51, 153, 0.4)'
                col='white'
                br=' 0 0 8px 8px'
-               Btn='Donate'
+               Bttn='Donate'
                Head='Donating to Charity'
                Paragraph='We believe everyone should be able to live'
                Paragraph1='with dignity, without dependence. We are a'
@@ -172,6 +179,8 @@ export const CardHolder2 = () => {
                ftz='30px'
                mgr='220px 0 0 -290px'
                fnz='14px'
+               wtth='165px'
+               hhht='48px'
                wth='120px'
                hht='40px'
                tgn='center'
@@ -222,6 +231,7 @@ const MainCard = styled.div`
 const CardWrap = styled.div`
   width: 95%;
   display: flex;
+  margin-left: 40px;
     /* flex-wrap: wrap; */
     
     /* flex-direction: column; */
@@ -260,27 +270,40 @@ const LeftCard = styled.div`
     flex-wrap: nowrap;
     /* flex-direction: column; */
   }
+  @media screen and (max-width: 850px){
+    margin-left: -20px;
+  }
   @media screen and (max-width: 768px){
     margin-left: -40px;
   }
-  @media screen and (max-width: 600px){
+  @media screen and (max-width: 706px){
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 0 0 -5px;
+    margin: 0 0 0 90px;
+    
   }
+  @media screen and (max-width: 600px){
+    margin: 0 10px 0 0;
+      
+    }
+  @media screen and (max-width: 525px){
+    margin: 0 0 0 -50px;
+      
+    }
   @media screen and (max-width: 425px){
-    margin-left: 30px;
+    margin-left: -25px;
+    width: 100%;
   }
 
   
-  /* @media screen and (max-width: 375px){
-    margin-left: -22px;
-  } */
+  @media screen and (max-width: 375px){
+    margin-left: -25px;
+  }
   @media screen and (max-width: 320px){
      
-      margin-left: -15px;
+    margin: 0 10px 0 -45px;
       
      
     }
@@ -292,14 +315,31 @@ const RightCard = styled.div`
     @media screen and (max-width: 1350px){
       margin-left: 250px;
   }
+  @media screen and (max-width: 850px){
+    margin-left: 180px;
+  }
   @media screen and (max-width: 768px){
     margin-left: 150px;
   }
+  @media screen and (max-width: 706px){
+    margin-left: 100px;
+  }
   @media screen and (max-width: 600px){
-    margin-left: -10px;
-  }
+    margin: 0 30px 0 0;
+      
+    }
+  @media screen and (max-width: 525px){
+    margin: 0 0 0 -50px;
+      
+    }
   @media screen and (max-width: 425px){
-    margin-left: -20px;
+    margin-left: -60px;
   }
-
+  @media screen and (max-width: 375px){
+    margin-left: -60px;
+  }
+  @media screen and (max-width: 320px){
+    margin: 0 10px 0 -45px;
+    
+  }
   `

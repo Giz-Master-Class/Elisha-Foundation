@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import {Hero} from '../BlogPage/Hero'
-import CardHolder from '../Card/CardHolder'
-import {CardHolder2} from '../Card/CardHolder2'
+import CardHolder from '../BlogPage/CardHolder'
+import {CardHolder2} from '../BlogPage/CardHolder2'
 
 export const BlogPage = () => {
   return (

@@ -1,6 +1,7 @@
 import React from 'react'
 import Mother from '../Images/mother.png'
 import styled from 'styled-components'
+import {Link} from 'react-router-dom'
 
 export const Hero = () => {
   return (
@@ -14,7 +15,7 @@ export const Hero = () => {
                  <Para1>We are excited about the lives we are touching,</Para1>
                  <Para2>catch up on our events</Para2>
               </Para>
-              <Button>Donate</Button>
+              <Link to = '/donate' style ={linkStyle} ><Button>Donate</Button></Link>
             </HeroWrap>
         {/* </Container> */}
       </MainHeroContain>
@@ -106,3 +107,9 @@ const Button = styled.div`
    font-weight: bold;
    padding: 15px 0 0 0;
 `
+
+const linkStyle = {
+  textDecoration :"none",
+  
+  
+}
