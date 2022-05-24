@@ -67,6 +67,7 @@ const CardHolder = () => {
            wt='165px'
            he=' 48px'
            hg4='475px'
+           mt2='5px'
         />
         <Card
            Page='Most Recent Update'
@@ -130,7 +131,7 @@ const CardHolder = () => {
            wt='165px'
            he=' 48px'
            hg4='475px'
-          
+           mt2='5px'
         />
     </div>
   )

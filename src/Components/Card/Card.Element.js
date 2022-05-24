@@ -235,11 +235,11 @@ export const Para = styled.p`
       height: ${({hg1}) =>hg1};
       font-size: ${({fz1}) =>fz1};
       line-height: ${({lh1}) =>lh1};
-      /* background: red; */
+      
     }
     @media screen and (max-width: 900px){
       margin-left: ${({mrft}) =>mrft};
-      /* background: pink; */
+      
       height: ${({hg4}) =>hg4};
   }
     @media screen and (max-width: 850px){
@@ -247,17 +247,17 @@ export const Para = styled.p`
       height: ${({hg2}) =>hg2};
       font-size: ${({fz2}) =>fz2};
       line-height: ${({lh2}) =>lh2};
-      /* background: yellow; */
+      
     }
     @media screen and (max-width: 706px){
-      /* margin-bottom: 15px; */
+      
       width: ${({wid6}) =>wid6};
       height: ${({hg5}) =>hg5};
-      /* background: pink; */
+      
     }
     @media screen and (max-width: 525px){
       width: ${({wid4}) =>wid4};
-      /* background: purple; */
+      
     }
     @media screen and (max-width: 425px){
       width: ${({wid5}) =>wid5};
@@ -286,7 +286,7 @@ export const ButtonContain = styled.div`
    display: flex;
    justify-content: flex-end;
    margin-top: ${({mt}) =>mt};
-   /* background: yellow; */
+   
    @media screen and (max-width: 1024px){
       margin-top: ${({mtn}) =>mtn};
   }
@@ -306,7 +306,7 @@ export const ButtonContain = styled.div`
       width: ${({wdt}) =>wdt};
     }
     @media screen and (max-width: 320px){
-      /* margin-right: ${({mrt}) =>mrt}; */
+      
       margin-left: ${({mnt1}) =>mnt1};
     }
 
@@ -318,7 +318,7 @@ export const Para2 = styled.p`
       padding: ${({pdg1}) =>pdg1};
     }
    @media screen and (max-width: 320px){
-      /* font-size: 14px; */
+      
       padding: ${({pdg}) =>pdg}; 
     }
 `
