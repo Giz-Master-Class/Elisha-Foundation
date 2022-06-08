@@ -8,7 +8,9 @@ import {ContactPage} from './Components/ContactPage/ContactPage'
 import {BlogPage} from './Components/BlogPage/BlogPage'
 import { DetailedBlogPage } from './Components/DetailedBlogPage/DetailedBlogPage';
 import {DonatePage} from './Components/DonatePage/DonatePage'
-
+import {SignIn} from './Components/SignIn/SignIn'
+import {Dashboard} from './Components/Dashboard/Dashboard'
+// import ProtectedRoute from './omponents/ProtectedRoute';
 
 function App() {
   return (
@@ -21,9 +23,23 @@ function App() {
           <Route path='/contact'  element={<ContactPage />} />
           <Route path='/blog'  element={<BlogPage />} />
           <Route path='/detailedblog'  element={<DetailedBlogPage/>} />
+          <Route path='/signin'  element={<SignIn/>} />
           <Route path='/donate'  element={<DonatePage />} />
+          {/* <Route element={<ProtectedRoute />}> */}
+          <Route exact path='/*' element={<Dashboard />}></Route>
+        {/* </Route> */}
         </Routes>
       </Router>
+
+    {/* <div>
+      <Router>
+        <Routes> */}
+          {/* <Route element={<ProtectedRoute />}> */}
+          {/* <Route exact path='/*' element={<Dashboard />}></Route> */}
+        {/* </Route> */}
+        {/* </Routes> */}
+      {/* </Router>
+      </div> */}
     </>
   );
 }

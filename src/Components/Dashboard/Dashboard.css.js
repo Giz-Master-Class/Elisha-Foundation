@@ -1,0 +1,179 @@
+import styled from "styled-components"
+
+export  const linkStyle={
+    color:"white",
+    textDecoration:"none"
+}
+
+export const DashboardContainer=styled.div`
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:space-between;
+    background-color:yellow;
+    .welcomePara{
+        color:whitesmoke;
+        font-weight:bolder;
+        font-size:20px;
+        text-align:center;
+        margin-top:30px;
+    }
+    .sideBar{
+        width:250px;
+        height:100vh;
+        background-color:green;
+        position:fixed;
+        top:0%;
+        left:0%;
+        border-radius:0px 30px 30px 0px ;
+        display:flex;
+        justify-content:space-between;
+        flex-direction:column;
+        align-items:center;
+    }
+    .dashboardWrapper{
+        display:flex;
+        justify-content:space-around;
+        width:150px;
+        background-color:green;
+        align-items:center;
+        transition:0.9s ease-in-out;
+        margin-top:30px;
+        &:hover{
+            background-color:whitesmoke;
+            color:black;
+            border-radius:5px;
+            width:120px;
+            margin-top:30px;
+            // margin-left:30px;
+        }
+    }
+    .dashboardWrapperactive{
+        display:flex;
+        justify-content:space-around;
+        align-items:center;
+        background-color:whitesmoke;
+        color:black;
+        border-radius:5px;
+        width:120px;
+        margin-top:30px;
+        // margin-left:30px;
+    }
+    .aboutWrapper{
+        display:flex;
+        justify-content:space-around;
+        width:150px;
+        align-items:center;
+        transition:0.9s ease-in-out;
+        margin-top:30px;
+        &:hover{
+            background-color:whitesmoke;
+            color:black;
+            border-radius:5px;
+            width:120px;
+            // margin-left:30px;
+        }
+    }
+    .aboutWrapperactive{
+        display:flex;
+        justify-content:space-around;
+        align-items:center;
+        background-color:whitesmoke;
+        color:black;
+        border-radius:5px;
+        width:120px;
+        margin-top:30px;
+    }
+    .contactWrapper{
+        display:flex;
+        justify-content:space-around;
+        width:150px;
+        align-items:center;
+        transition:1.5s ease-in-out;
+        margin-top:30px;
+        &:hover{
+            background-color:whitesmoke;
+            color:black;
+            border-radius:5px;
+            width:130px;
+        }
+    }
+    .contactWrapperactive{
+        display:flex;
+        justify-content:space-around;
+        align-items:center;
+        background-color:whitesmoke;
+        color:black;
+        border-radius:5px;
+        width:140px;
+        margin-top:30px;
+    }
+    .blogWrapper{
+        display:flex;
+        justify-content:space-around;
+        width:150px;
+        align-items:center;
+        transition:1.5s ease-in-out;
+        margin-top:30px;
+        &:hover{
+            background-color:whitesmoke;
+            color:black;
+            border-radius:5px;
+            width:130px;
+        }
+    }
+    .blogWrapperactive{
+        display:flex;
+        justify-content:space-around;
+        align-items:center;
+        background-color:whitesmoke;
+        color:black;
+        border-radius:5px;
+        width:140px;
+        margin-top:30px;
+    }
+    .donateWrapper{
+        display:flex;
+        justify-content:space-around;
+        width:150px;
+        align-items:center;
+        transition:1.5s ease-in-out;
+        margin-top:30px;
+        &:hover{
+            background-color:whitesmoke;
+            color:black;
+            border-radius:5px;
+            width:130px;
+        }
+    }
+    .donateWrapperactive{
+        display:flex;
+        justify-content:space-around;
+        align-items:center;
+        background-color:whitesmoke;
+        color:black;
+        border-radius:5px;
+        width:140px;
+        margin-top:30px;
+    }
+    .logOutWrapper{
+        display:flex;
+        justify-content:space-around;
+        width:100px;
+        margin-bottom:50px;
+        &:hover{
+            background-color:#ffc107;
+            color:black;
+            border-radius:5px;
+            width:120px;
+        }
+    }
+    .dashboardRoutes{
+        @media screen and (min-width:768px){
+            margin-left:260px;
+        }
+        @media screen and (max-width:768px){
+            padding-top:50px;
+        } 
+    }
+`
