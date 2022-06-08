@@ -19,6 +19,7 @@ export const Header = () => {
                 <Link to ='/about' style ={linkStyle}> <NavLinks>About</NavLinks> </Link>
                 <Link to ='/contact' style ={linkStyle}> <NavLinks>Contact</NavLinks> </Link>
                 <Link to ='/blog' style ={linkStyle}> <NavLinks>Blog</NavLinks> </Link>
+                <Link to ='/signin' style ={linkStyle}> <NavLinks>Sign In</NavLinks> </Link>
                 <Link to ='/donate' style ={linkStyle}> <Button>Donate</Button> </Link>
             </Navs>
             <MobileIcon onClick={handleClick}>
